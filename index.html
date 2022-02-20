@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+<body>
+	<h1>coolors</h1>
+	<p>click space to generate colors</p>
+	<p>To copy the color code click the top right code</p>
+	<div class="container">
+		<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" style="user-select: auto;">
+			<div class="col" style="user-select: auto;">
+				<div class="card shadow-sm" style="user-select: auto;">
+				  <div class="card-body" style="user-select: auto;">
+					<div class="d-flex justify-content-between align-items-center" style="user-select: auto;">
+					  <div class="btn-group" style="user-select: auto;">
+						<button type="button" class="lock btn btn-sm btn-outline-secondary" onclick="lock(0)" style="user-select: auto;">Lock</button>
+						<button type="button" class="btn btn-sm btn-outline-secondary" onclick="save(0)" style="user-select: auto;">Save</button>
+					  </div>
+					  <button type="button" class="copy btn btn-sm btn-outline-secondary" onclick="copy(0)" style="user-select: auto;">Copy</button>
+					  </div>
+				  </div>
+				</div>
+			</div>
+			<div class="col" style="user-select: auto;">
+				<div class="card shadow-sm" style="user-select: auto;">
+				  <div class="card-body" style="user-select: auto;">
+					<div class="d-flex justify-content-between align-items-center" style="user-select: auto;">
+					  <div class="btn-group" style="user-select: auto;">
+						<button type="button" class="lock btn btn-sm btn-outline-secondary" onclick="lock(1)" style="user-select: auto;">Lock</button>
+						<button type="button" class="btn btn-sm btn-outline-secondary" onclick="save(1)" style="user-select: auto;">Save</button>
+					  </div>
+					  <button type="button" class="copy btn btn-sm btn-outline-secondary" onclick="copy(1)" style="user-select: auto;">Copy</button>
+					  </div>
+				  </div>
+				</div>
+			</div>
+			<div class="col" style="user-select: auto;">
+				<div class="card shadow-sm" style="user-select: auto;">
+				  <div class="card-body" style="user-select: auto;">
+					<div class="d-flex justify-content-between align-items-center" style="user-select: auto;">
+					  <div class="btn-group" style="user-select: auto;">
+						<button type="button" class="lock btn btn-sm btn-outline-secondary" onclick="lock(2)" style="user-select: auto;">Lock</button>
+						<button type="button" class="btn btn-sm btn-outline-secondary" onclick="save(2)" style="user-select: auto;">Save</button>
+					  </div>
+					  <button type="button" class="copy btn btn-sm btn-outline-secondary" onclick="copy(2)" style="user-select: auto;">Copy</button>
+					  </div>
+				  </div>
+				</div>
+			</div>
+			<div class="col" style="user-select: auto;">
+				<div class="card shadow-sm" style="user-select: auto;">
+				  <div class="card-body" style="user-select: auto;">
+					<div class="d-flex justify-content-between align-items-center" style="user-select: auto;">
+					  <div class="btn-group" style="user-select: auto;">
+						<button type="button" class="lock btn btn-sm btn-outline-secondary" onclick="lock(3)" style="user-select: auto;">Lock</button>
+						<button type="button" class="btn btn-sm btn-outline-secondary" onclick="save(3)" style="user-select: auto;">Save</button>
+					  </div>
+					  <button type="button" class="copy btn btn-sm btn-outline-secondary" onclick="copy(3)" style="user-select: auto;">Copy</button>
+					  </div>
+				  </div>
+				</div>
+			</div>
+			<div class="col" style="user-select: auto;">
+				<div class="card shadow-sm" style="user-select: auto;">
+				  <div class="card-body" style="user-select: auto;">
+					<div class="d-flex justify-content-between align-items-center" style="user-select: auto;">
+					  <div class="btn-group" style="user-select: auto;">
+						<button type="button" class="lock btn btn-sm btn-outline-secondary"onclick="lock(4)" style="user-select: auto;">Lock</button>
+						<button type="button" class="btn btn-sm btn-outline-secondary" onclick="save(4)" style="user-select: auto;">Save</button>
+					  </div>
+					  <button type="button" class="copy btn btn-sm btn-outline-secondary" onclick="copy(4)" style="user-select: auto;">Copy</button>
+					  </div>
+				  </div>
+				</div>
+			</div>
+			<div class="col" style="user-select: auto;">
+				<div class="card shadow-sm" style="user-select: auto;">
+				  <div class="card-body" style="user-select: auto;">
+					<div class="d-flex justify-content-between align-items-center"  style="user-select: auto;">
+					  <div class="btn-group" style="user-select: auto;">
+						<button type="button" class="lock btn btn-sm btn-outline-secondary" onclick="lock(5)" style="user-select: auto;">Lock</button>
+						<button type="button" class="btn btn-sm btn-outline-secondary" onclick="save(5)" style="user-select: auto;">Save</button>
+					  </div>
+					  <button type="button" class="copy btn btn-sm btn-outline-secondary" onclick="copy(5)" style="user-select: auto;">Copy</button>
+					  </div>
+				  </div>
+				</div>
+			</div>
+			  
+		</div>
+
+		<button type="button" onclick="generate()" class="btn btn-info">generate</button>
+	</div>
+	<div>
+		<h1>Favourite colors:</h1>
+		<ul id="favlist" class="list-group list-group-flush">
+			
+		</ul>
+		
+		<button type="button" onclick="clean()" class="btn btn-info">clear</button>
+
+	</div>	
+		
+	<script src="script.js"></script>
+</body>
+</html>

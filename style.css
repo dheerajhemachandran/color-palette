@@ -1,0 +1,35 @@
+
+
+body{
+	text-align: center;
+
+}
+
+
+h1{
+	color: red;
+}
+
+.card-body{
+	padding: 0px 0px;
+}
+.d-flex{
+	background-color: white;
+	padding: 10px;
+
+}
+
+.btn-info{
+	margin: 20px;
+}
+
+.card{
+	height:100px;
+}
+
+@media (min-width: 600px) {
+	.card{
+		height: 500px;
+	}
+  }
+  
